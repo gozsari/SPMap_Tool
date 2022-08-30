@@ -8,11 +8,9 @@ It is sequence-based feature extraction toolbased on the subsequences profiles o
 2. Users can then extract protein features using the profile(s).
 
 ### How to use:
-
-'''
+```
  python run_SPMap.py --generateProfile True --path 'input_folder' --fastaFile_P CYT_pos.fasta --minSeqLen 20 --subSeqLen 5 --fastaFile_O CYT_golden_positive.fasta
-
-'''
+```
 
 
 
