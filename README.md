@@ -1,11 +1,11 @@
 # SPMap: Subsequence-based feature map for protein function classification
 SPMap takes into account the information coming from the subsequences of a protein. A group of protein sequences that belong to the same level of classification is decomposed into fixed-length subsequences and they are clustered to obtain a representative feature space mapping. Mapping is defined as the distribution of the subsequences of a protein sequence over these clusters. The resulting feature space representation is used to train discriminative classifiers for functional families. The aim of this approach is to incorporate information coming from important subregions that are conserved over a family of proteins while avoiding the difficult task of explicit motif identification. 
-
+<p align = "center">
 <figure>
-<img class = "center" src="images/spmap.jpg" alt="SPMap" style="width:50%">
+<img src="images/spmap.jpg" alt="SPMap" style="width:50%">
 <figcaption align = "center"><b>Fig. 1. SPMap flow diagram. (A) Subsequence profile map construction: subsequences of the proteins in positive training set are clustered to construct subsequence profile map. (B) Classification: constructed profile map is utilized to find the feature space representation of the protein sequence to be classified.</b></figcaption>
 </figure>
-
+</p>
 ## SPMap tool:
 It is sequence-based feature extraction tool based on the subsequences profiles obtained from trainin data (in fasta format).
 
