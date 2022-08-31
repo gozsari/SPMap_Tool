@@ -30,14 +30,19 @@ def calculate_fv_sequence(list_subsequence, list_profiles):
         list_fv_sequence.append(max_value)
     return list_fv_sequence
 
+
 def form_dict_fv(list_profiles, fasta_dict, sub_seq_len):
     """
+    This function is to construct a dictionary whose keys are protein ids and values are SPMap feature vectors.
 
-    :param list_profiles:
-    :param fasta_file:
-    :param min_seq_len:
-    :param sub_seq_len:
-    :return:
+    Args:
+        list_profiles (list): list of the profile dictionaries
+        fasta_dict (dict): is dictionary of fasta file that we are to construct SPMap feature vectors.
+                    (keys: protein ids, values: sequences)
+        sub_seq_len (int): is an integer that indicates the length of subsequences
+
+    Return:
+        dict_fv (dict): is a dictionary whose keys are protein ids and values are SPMap feature vectors.
     """
 
     dict_fv = {}

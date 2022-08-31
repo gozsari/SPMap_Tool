@@ -7,15 +7,15 @@ def constructCluster(alphabet, sub_seq_len, blo62Dict, listSubsequence, similari
     This function is to construct clusters
 
     Args:
-        alphabet:
-        sub_seq_len:
-        blo62Dict:
-        listSubsequence:
+        alphabet (string): is the string of combined letters of valid amino acids (20 letters: ARNDCQEGHILKMFPSTWYV).
+        sub_seq_len (int): is an integer that indicates the length of subsequences.
+        blo62Dict (dict): is the dictionary whose keys are amino acid pairs and values are blosum62 values.
+        listSubsequence (list): the list of subsequences extracted from the fasta file to construct clusters.
 
     Return:
+        clustersDict (dict): is a dictionary whose keys are center subsequence values are tuples of subsequence count
+        and PSSM matrix of the cluster.
     """
-
-    similarityThreshold = 8
     PSSM = PSSM_initializer(alphabet, sub_seq_len)
     clustersDict = dict()
     subsequenceCount = 1
@@ -41,13 +41,15 @@ def constructProfiles(clustersDict, NUMBER_SEQS, sub_seq_len, alphabet):
     This function is to create profiles and takes cluster dictionary and number of sequences as parameter
 
     Args:
-        clustersDict:
-        NUMBER_SEQS:
-        sub_seq_len:
-        alphabet:
+        clustersDict (dict): is a dictionary whose keys are center subsequence values are tuples of subsequence count
+        and PSSM matrix of the cluster.
+        NUMBER_SEQS (int): the number of protein sequences in the fasta file used for profile construction.
+        sub_seq_len (int): is an integer that indicates the length of subsequences.
+        alphabet (string): is the string of combined letters of valid amino acids (20 letters: ARNDCQEGHILKMFPSTWYV).
 
     Return:
-
+        profileDict (dict): is a dictionary whose keys are center subsequences of the clusters and values are
+        profile matrices.
     """
     profileDict = {}
     for key in clustersDict:

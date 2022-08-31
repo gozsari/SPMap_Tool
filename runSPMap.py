@@ -1,7 +1,7 @@
 import argparse
 
-from generate_Profiles import constructCluster, constructProfiles
-from generate_fectorVectors import form_dict_fv
+from generateProfiles import constructCluster, constructProfiles
+from generateFeatureVectors import form_dict_fv
 from utils import readFasta, extractAllSubsequences, blosum62_reader, writeProfiles2File, read_profiles, \
     write_feature_vector
 
