@@ -13,12 +13,12 @@ if __name__ == "__main__":
                                                                            'not, True if the profile file needs to be '
                                                                            'generated')
     parser.add_argument('--path', type=str, default="input_folder", help='path to fasta file directory')
-    parser.add_argument('--fastaFile_P', type=str, default="sample", help='fasta file name to construct profiles')
+    parser.add_argument('--fastaFile_P', type=str, default="CYT_pos.fasta", help='fasta file name to construct profiles')
     parser.add_argument('--minSeqLen', type=int, default=20,
                         help="protein sequences less than this value will not be considered")
-    parser.add_argument('--profileFile', type=str, default="sample.profile", help='profile file name')
+    parser.add_argument('--profileFile', type=str, default="CYT_pos_profile.txt", help='profile file name')
     parser.add_argument('--subSeqLen', type=int, default=5, help='the length of subsequences')
-    parser.add_argument('--fastaFile_O', type=str, default="sample", help='fasta file name whose features will be '
+    parser.add_argument('--fastaFile_O', type=str, default="CYT_golden_positive.fasta", help='fasta file name whose features will be '
                                                                           'extracted')
 
     args = parser.parse_args()
