@@ -11,7 +11,18 @@ It is sequence-based feature extraction tool based on the subsequences profiles 
 ```
  python runSPMap.py --generateProfile True --path 'input_folder' --fastaFile_P CYT_pos.fasta --minSeqLen 20 --subSeqLen 5 --fastaFile_O CYT_golden_positive.fasta
 ```
+Table 1: SPMap tool's arguments
 
+| Arguments                               | Description                                                                                 | Values
+-----------------------------------------|---------------------------------------------------------------------------------------------|---------------------
+ generateProfile                    | If profile files are to be generated or not, True if the profile file needs to be generated |True or False
+ path                  | path to fasta file directory                                                                | default: "input_folder"
+fastaFile_P | fasta file name to construct profiles (fasta file of training data)                         | default: "CYT_pos.fasta"
+minSeqLen      | protein sequences shorter than this value will not be considered                            | default: 20
+profileFile |profile file name to be generated |default: "CYT_pos_profile.txt"
+subSeqLen | the length of subsequences | default: 5
+fastaFile_O | fasta file name whose features will be extracted | default: "CYT_golden_positive.fasta"
+<br/>
 
 
 ## References
