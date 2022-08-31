@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/output_folder/CYT_golden_positive_SPMap.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
