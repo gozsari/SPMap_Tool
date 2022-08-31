@@ -26,7 +26,7 @@ fastaFile_O | fasta file name whose features will be extracted | default: "CYT_g
 
 
 ## References
-Sarac, O. S., Gürsoy-Yüzügüllü, Ö., Cetin-Atalay, R., & Atalay, V. (2008). Subsequence-based feature map for protein function classification. Computational biology and chemistry, 32(2), 122-130.
+[Sarac, O. S., Gürsoy-Yüzügüllü, Ö., Cetin-Atalay, R., & Atalay, V. (2008). Subsequence-based feature map for protein function classification. Computational biology and chemistry, 32(2), 122-130.](https://www.sciencedirect.com/science/article/pii/S1476927107001491?via%3Dihub)
 
 ## Our studies that we used SPMap:
 1. [Özsarı, G., Rifaioglu, A. S., Atakan, A., Doğan, T., Martin, M. J., Çetin Atalay, R., & Atalay, V. (2022). SLPred: a multi-view subcellular localization prediction tool for multi-location human proteins. Bioinformatics.](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac458/6633921)
